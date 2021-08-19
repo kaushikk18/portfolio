@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151515;
+  font-family: "Share Tech Mono", monospace;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.theme-dark {
+  --color-bg: #151515;
+  --color-p: aquamarine;
+  --color-h1: white;
+  --color-h2: white;
+  --color-h3: white;
+  --color-li: aquamarine;
+}
+.theme-light {
+  --color-bg: #f2f2f2;
+  --color-p: aquamarine;
+  --color-h1: #242424;
+  --color-h2: #242424;
+  --color-h3: #242424;
+  --color-li: aquamarine;
+}
+
+p {
+  color: aquamarine;
+}
+ul li {
+  color: aquamarine;
+}
+
+h1 h2 h3 {
+  color: white;
+}
+
+/* navbar css */
+
+.navbar {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  background-color: #151515;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navbar ul li {
+  float: left;
+  padding: 13px;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: white;
+  transform: 0.5s;
+}
+
+.navbar ul a:hover {
+  color: aquamarine;
+}
+
+/* small intro and photo*/
+
+.main {
+  width: 85%;
+  height: 650px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.box h1 {
+  font-size: 4.5em;
+  margin-bottom: 0.2em;
+}
+.box p {
+  font-size: 1.2em;
+  color: #d0cfcf;
+  margin-bottom: 1.2em;
+}
+
+.main img {
+  width: 35em;
+  position: absolute;
+  right: 10px;
+  z-index: -1;
+}
+
+/* about */
+
+.about {
+  margin-top: 7rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.about h1 {
+  margin-bottom: 4rem;
+}
+
+.about h3 {
+}
+
+.about p {
+  font-size: 1.2em;
+}
+
+.skills {
+  margin-top: 5rem;
+}
+
+.skills ul li {
+  list-style-type: none;
+  padding-top: 0.5em;
+}
+
+.skills ul {
+  margin-top: 2em;
+  font-size: 1.2em;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skillbox-1 {
+  width: 30%;
+  text-align: center;
+}
+
+.skillbox-2 {
+  width: 30%;
+  text-align: center;
+}
+
+.skillbox-3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.skills h3 {
+  margin-bottom: 1rem;
+}
+
+.facts {
+  margin-top: 5rem;
+}
+
+.facts ul li {
+  list-style-type: none;
+  padding-top: 0.5em;
+}
+
+.facts ul {
+  margin-top: 2em;
+  font-size: 1.2em;
+}
+
+/* Education */
+
+.education {
+  margin-top: 5rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
+  font-size: 1em;
+}
+
+.education h1 {
+  margin-bottom: 4rem;
+}
+
+.education-container {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.education-container-child {
+  width: 40%;
+  background-color: #313131;
+  border-radius: 8px;
+  padding: 20px 20px 20px 20px;
+}
+
+.education-container-child h3 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.cert-courses {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2em;
+}
+
+.contact {
+  margin-top: 5rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
+  margin-bottom: 5rem;
+  font-size: 1.2em;
+}
+
+.contact p {
+  padding-bottom: 1em;
+}
+
+.contact h1 {
+  margin-bottom: 4rem;
+}
+
+.contact a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.social-menu {
+  padding-top: 2em;
+}
+
+.social-menu ul {
+  padding: 0;
+  margin: 0;
+  /*transform: translate(-50%, -50%);*/
+  display: flex;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fab {
+  font-size: 30px;
+  line-height: 45px;
+  transition: 0.3s;
+  color: #000;
+}
+
+.social-menu ul li .fab:hover {
+  color: #fff;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-menu ul li a:hover {
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #0077b5;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #000;
+}
+
+@media (max-width: 1250px) {
+  .main img {
+    width: 25em;
+    right: 0;
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    font-size: 14px;
+  }
+  .main img {
+    width: 35em;
+    top: 80px;
+  }
+  .main {
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .main img {
+    width: 22em;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+  .main {
+    height: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    width: 80%;
+    margin-bottom: 0;
+  }
+  .navbar ul li {
+    padding: 3px;
+    font-size: 10px;
+  }
+  .about {
+    /*margin: 3em,0em,0,0em; */
+    margin-top: 3.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .about h1 {
+    margin-bottom: 2rem;
+  }
+
+  .education {
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .skills {
+    margin-top: 2rem;
+  }
+  .skills-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skillbox-1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skillbox-2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skillbox-3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .facts {
+    margin-top: 2rem;
+  }
+  .education h1 {
+    margin-bottom: 2rem;
+  }
+
+  .education-container {
+    flex-direction: column;
+  }
+
+  .education-container-child {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .cert-courses {
+    font-size: 1.3em;
+    margin-top: 5px;
+  }
+
+  .contact {
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .contact h1 {
+    margin-bottom: 2rem;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-container-child {
+    width: 90%;
+  }
+
+  .contact-container-child-1 {
+    float: none;
+  }
+
+  .social-menu ul li {
+    margin: 0 7px;
+  }
+
+  .skills-bar {
+    width: 100px;
+    border-radius: 10px;
+  }
+
+  .social-menu ul li .fab {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+
+  .social-menu ul li a {
+    width: 22.5px;
+    height: 22.5px;
+  }
+}
+
+.skills-bar {
+  width: 100%;
+  border-radius: 10px;
+  padding: 50px 50px;
+}
+
+.skills-bar .bar {
+  margin: 20px 0px;
+}
+
+.skills-bar .bar:first-child {
+  margin-top: 0px;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 5px;
+}
+.skills-bar .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+    0px 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line span {
+  height: 100%;
+  width: 80%;
+  background: #6a6a6b;
+  position: absolute;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line.html span {
+  width: 80%;
+}
+
+.progress-line.javascript span {
+  width: 75%;
+}
+
+.progress-line.php span {
+  width: 55%;
+}
+
+.progress-line.python span {
+  width: 60%;
+}
+
+.progress-line.mysql span {
+  width: 73%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 5px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+
+.progress-line.html span::after {
+  content: "80%";
+}
+
+.progress-line.javascript span::after {
+  content: "75%";
+}
+
+.progress-line.php span::after {
+  content: "55%";
+}
+
+.progress-line.python span::after {
+  content: "60%";
+}
+
+.progress-line.mysql span::after {
+  content: "73%";
+}
