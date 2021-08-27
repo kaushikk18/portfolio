@@ -11,9 +11,26 @@ p {
 
 h1 {
   color: white;
-  padding-left: 2em;
+  padding-left: 3em;
   padding-top: 1em;
+  position: relative;
+  display: inline-block;
 }
+
+/* h1::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  width: 95%;
+  height: 4px;
+  background: linear-gradient(
+    90.84deg,
+    #2196f3 -12.84%,
+    #03989e 30.91%,
+    #9b2cc7 104.16%
+  );
+} */
 
 a {
   text-decoration: none;
@@ -63,6 +80,7 @@ a {
   h1 {
     padding-left: 0.5rem;
     padding-top: 0px;
+    font-size: 1.5rem;
   }
 
   .project-container {
