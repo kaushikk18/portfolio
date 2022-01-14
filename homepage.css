@@ -121,6 +121,10 @@ h1 h2 h3 {
   font-size: 1.2em;
 }
 
+#resume-link{
+  color: aquamarine;
+}
+
 .skills {
   margin-top: 5rem;
 }
@@ -210,6 +214,10 @@ h1 h2 h3 {
   text-align: center;
   font-size: 1.2rem;
   margin-top: 2em;
+}
+
+#cert-courses-link{
+  color: aquamarine;
 }
 
 .contact {
