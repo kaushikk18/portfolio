@@ -114,11 +114,15 @@ h1 h2 h3 {
   margin-bottom: 4rem;
 }
 
-.about h3 {
-}
+/* .about h3 {
+} */
 
 .about p {
   font-size: 1.2em;
+}
+
+.smalllink{
+  color: white;
 }
 
 #resume-link{
@@ -501,11 +505,11 @@ h1 h2 h3 {
 }
 
 .progress-line.html span {
-  width: 80%;
+  width: 90%;
 }
 
 .progress-line.javascript span {
-  width: 75%;
+  width: 65%;
 }
 
 .progress-line.php span {
@@ -556,11 +560,11 @@ h1 h2 h3 {
 }
 
 .progress-line.html span::after {
-  content: "80%";
+  content: "90%";
 }
 
 .progress-line.javascript span::after {
-  content: "75%";
+  content: "65%";
 }
 
 .progress-line.php span::after {
